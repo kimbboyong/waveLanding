@@ -1,0 +1,38 @@
+.nav {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.nav li a {
+    font-size: 1.25em;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+/* wave */
+.wave_bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wave_item {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#FDE1AE, #F5F0EB, #04B6E9);
+    transition: top 1s ease-in-out;
+}
+
+.wave_item:nth-child(2) {
+    background: linear-gradient(#fde1ae00, #04b6e9, #0183e100);
+}
+
+.wave_item:nth-child(3) {
+    background: linear-gradient(#f5f0eb00, #0183e1);
+}

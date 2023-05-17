@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MapoFlowerIsland';
+}
+
+body {
+    background: linear-gradient(#FDE1AE, #fff) no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.nav {
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
