@@ -5,15 +5,31 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'BMHANNAAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'MapoFlowerIsland';
+    font-family: 'BMHANNAAir';
 }
 
 body {
-    background: linear-gradient(#FDE1AE, #fff) no-repeat;
+    /* background: linear-gradient(#FDE1AE, #fff) no-repeat; */
+    background: url(../images/bg.png) no-repeat center;
+    background-size: cover;
     height: 100vh;
     overflow: hidden;
     z-index: -1;

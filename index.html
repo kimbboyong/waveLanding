@@ -7,11 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/audio.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
     <div class="container">
+        <div class="bg">
+            <button onclick="musicStart();">음악키는버튼임ㅋ</button>
+        </div>
+        <section class="implementation">
+            <div class="play-controls">
+                <div class="playBtn">
+                    <img src="https://image.bugsm.co.kr/album/images/500/40457/4045702.jpg" width=100 height=100
+                        id="vynl-id" class="" />
+                    <div class="play-buttons">
+                        <div class='play-circle' id="playpause" onclick="play(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <audio id="audioSrc">
+                <source src="./music/music.mp3">
+            </audio>
+        </section>
+        <!-- <audio src="./music/music.mp3" controls></audio> -->
+
+
         <div class="nav">
             <ul>
                 <li onclick="startAnimation()">
@@ -113,73 +135,72 @@
                 </div>
                 <div class="content">
                     <div class="content_title">
-                        <h3>Basic</h3>
+                        <h3 class="active">Basic</h3>
                         <h3>React</h3>
                     </div>
                     <div class="page">
-                        <div class="items basic active">
-                            <ul>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_01.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_02.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_03.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_01.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_02.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_03.png" alt="">
-                                    </figure>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="items react">
-                            <ul>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_03.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_02.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_03.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_01.png" alt="">
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure>
-                                        <img src="./images/portfolio_02.png" alt="">
-                                    </figure>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="items basic active">
+                            <li class="emart" onclick="window.open('http://www.naver.com', '_blank')">
+                                <figure>
+                                    <img src="./images/portfolio_02.png" alt="">
+                                </figure>
+                                <h2>구현기능 <br> API를 활용한 검색과 페이지네이션</h2>
+                            </li>
+                            <li class="iope">
+                                <figure>
+                                    <img src="./images/portfolio_01.png" alt="">
+                                </figure>
+                                <h2>구현기능 <br> API를 활용한 검색과 asd</h2>
+                            </li>
+                            <li class="news">
+                                <figure>
+                                    <img src="./images/portfolio_03.png" alt="">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./images/portfolio_03.png" alt="">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./images/portfolio_03.png" alt="">
+                                </figure>
+                            </li>
+
+                        </ul>
+                        <ul class="items react">
+                            <li>
+                                <figure>
+                                    <img src="./images/portfolio_03.png" alt="">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./images/portfolio_02.png" alt="">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./images/portfolio_03.png" alt="">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./images/portfolio_03.png" alt="">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./images/portfolio_03.png" alt="">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="./images/portfolio_03.png" alt="">
+                                </figure>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

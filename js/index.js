@@ -1,7 +1,3 @@
-// // 1. 메뉴를 클릭했을때 클릭한 것만 엑티브가 된다
-// // 2. 엑트브가 되고 클릭한 내용과 섹션의 내용이 같다면 해당 섹션을 보여주고 다른 섹션은 보여주지 않는다.
-// // 3. 
-
 function startAnimation() {
     var backgroundItems = document.querySelectorAll('.wave_item');
     var index = 0;
@@ -78,3 +74,63 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+// audio
+
+// seek bar---------------------------------
+// var range = document.getElementById("range");
+var completionBar = document.getElementById("completionBar");
+// var slide = document.querySelector('.slide input[type="range"]');
+
+var audioSeek = document.getElementById("audioSrc");
+
+// range.oninput = function () {
+//     completionBar.style.width = this.value + '%';
+//     audioSeek.currentTime = ((this.value / 100)) * audioSeek.duration;
+// }
+
+
+//------------------------------------------
+
+function play(element) {
+
+    // var nowPlayingBoardId = document.getElementById("now-playing-board-id");
+
+    var vynlId = document.getElementById("vynl-id");
+
+    var audio = document.getElementById("audioSrc");
+
+    audio.loop = true;
+
+    // Assign an ontimeupdate event to the video element, and execute a function if the current playback position has changed
+
+    if (document.getElementById("playpause").classList.contains("play-circle")) {
+        vynlId.classList.add("vynl-animation");
+
+        document.getElementById("audioSrc").play();
+        // nowPlayingBoardId.style.transform = "translatey(-30%)";
+
+        document.getElementById("playpause").classList.remove("play-circle");
+        document.getElementById("playpause").classList.add("pause-circle");
+    }
+    else if (document.getElementById("playpause").classList.contains("pause-circle")) {
+        vynlId.classList.remove("vynl-animation");
+
+        document.getElementById("audioSrc").pause();
+        // nowPlayingBoardId.style.transform = "translatey(56%)";
+
+        document.getElementById("playpause").classList.remove("pause-circle");
+        document.getElementById("playpause").classList.add("play-circle");
+    }
+}
+
+function musicStart() {
+    const startBg = document.getElementsByClassName('bg')[0];
+    console.log(startBg)
+
+    startBg.style.display = 'none';
+    play();
+
+}
