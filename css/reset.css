@@ -13,8 +13,8 @@
 }
 
 @font-face {
-    font-family: 'BMHANNAPro';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-family: 'Katuri';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'BMHANNAAir';
+    font-family: 'Katuri';
 }
 
 body {
