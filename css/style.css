@@ -54,6 +54,7 @@
     text-align: center;
     background: rgba(255, 255, 255, .5);
     padding: 40px 20px;
+    word-break: keep-all;
 }
 
 #about .txt_wrap strong {
@@ -72,7 +73,11 @@
     display: flex;
     justify-content: center;
     background: rgba(255, 255, 255, .5);
-    padding: 40px 20px;
+    word-break: keep-all;
+}
+
+#skills .txt_wrap ul {
+    padding: 20px;
 }
 
 #skills .txt_wrap li {
@@ -123,17 +128,19 @@
 #portfolio .items {
     opacity: 0;
     transition: 1s ease-in-out;
+
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-    padding: 0 20px;
+
     height: 100%;
-    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 20px;
     gap: 25px;
+    overflow-y: scroll;
 }
 
 #portfolio .items.active {
@@ -150,6 +157,8 @@
     border-radius: 12px;
     cursor: pointer;
 }
+
+
 
 #portfolio .items li:hover h2 {
     display: flex;
@@ -248,4 +257,54 @@
     border-radius: 12px;
     background: rgba(255, 255, 255, .7);
     cursor: pointer;
+}
+
+@media screen and (max-width:1336px) {
+    #portfolio .items {
+        justify-content: center;
+    }
+
+    #portfolio .items li {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #about .txt_wrap {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #about .txt_wrap {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .section .title {
+        font-size: 30px;
+        padding: 150px 0 50px;
+    }
+
+    #skills .txt_wrap {
+        font-size: 17px;
+    }
+
+    #skills .txt_wrap ul {
+        height: calc(60vh - 50px);
+        overflow-y: auto;
+    }
+
+    #portfolio .title {
+        padding-bottom: 50px;
+    }
+
+    #portfolio .content_title {
+        margin-bottom: 30px;
+    }
+
+    #portfolio .items {
+        height: calc(60vh - 50px);
+    }
 }
