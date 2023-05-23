@@ -128,9 +128,6 @@ function play(element) {
 
 function musicStart() {
     const startBg = document.getElementsByClassName('bg')[0];
-    console.log(startBg)
-
     startBg.style.display = 'none';
     play();
-
 }

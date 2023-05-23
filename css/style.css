@@ -134,7 +134,8 @@
     transform: translateX(-50%);
     z-index: -1;
 
-    height: 100%;
+    width: 50%;
+    max-height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -188,6 +189,7 @@
     text-align: center;
     padding: 20px;
     line-height: 1.5;
+    word-break: keep-all;
 }
 
 #portfolio .items::-webkit-scrollbar-track {
@@ -255,8 +257,9 @@
     border: 0;
     padding: 20px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, .7);
+    background: #fff;
     cursor: pointer;
+    font-size: 20px;
 }
 
 @media screen and (max-width:1336px) {
@@ -271,6 +274,10 @@
 }
 
 @media screen and (max-width:768px) {
+    #portfolio .items {
+        width: auto;
+    }
+
     #about .txt_wrap {
         font-size: 23px;
     }
