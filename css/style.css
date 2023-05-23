@@ -23,7 +23,7 @@
 
 .nav .menu_item.active {
     opacity: 1;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #fff;
 }
 
 /* global section */
@@ -284,9 +284,19 @@
 }
 
 @media screen and (max-width:550px) {
+    #about .inner {
+        position: relative;
+        height: 100%;
+    }
+
     #about .txt_wrap {
+        width: 100%;
         font-size: 15px;
         padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .section .title {
